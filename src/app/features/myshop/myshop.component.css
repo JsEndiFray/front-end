@@ -1,0 +1,89 @@
+mat-toolbar {
+  background: #4e8ec2;
+  color: white;
+  min-height: 90px;
+
+  & mat-icon {
+    color: white;
+  }
+
+  & .logo {
+    width: 50px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  & a {
+    width: 120px;
+    margin: 10px;
+    background: #6d6b6d;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: "Al Bayan", serif;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .stock {
+    min-width: 120px;
+    min-height: 50px;
+    margin: 10px;
+    background: #74947c;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: "Al Bayan", serif;
+    cursor: pointer;
+    text-align: center;
+  }
+  .stock:hover {
+    background: #ad9d9d;
+    color: #0e0d0d;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.logo {
+  font-weight: 600;
+  margin: 10px;
+}
+
+.cart {
+  background: none;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.cart:hover {
+  background-color: #ffffff;
+}
+
+.cart img {
+  width: 22px;
+  height: auto;
+}
+
+.cart span {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  margin-right: 3px;
+}
+
+
+
+
+

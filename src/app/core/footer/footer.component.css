@@ -1,0 +1,29 @@
+
+mat-toolbar {
+  background: #4e8ec2;
+  min-height: 90px;
+  width: 100%;
+  height: auto;
+
+
+  & .logo {
+    width: 50px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+}
+
+/*footer izquierdo*/
+.list-payment {
+  margin-right: 40px;
+
+  & .icon_payment {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

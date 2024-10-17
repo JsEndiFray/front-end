@@ -1,0 +1,8 @@
+<img src="/zapato/{{cartItem?.image}}" alt="Zapatos" class="thumbnail">
+<div  class="info">
+  <span>{{cartItem?.name}}</span>
+  <span class="info-price">{{cartItem?.price | number: "1.2-2"}} €</span>
+</div>
+<button (click)="delete()">
+  <img src="/close/close.svg" alt="Eliminar articulo">
+</button>

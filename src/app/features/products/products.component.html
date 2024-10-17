@@ -1,0 +1,20 @@
+<app-myShop
+  (toggleCartVisibility)="toggleCartVisibility()"
+  (toggleStockVisibility)="toggleStockVisibility()"
+></app-myShop>
+
+
+
+@if (!isCartVisible && !isStockVisible) {
+  <app-catalog></app-catalog>
+}
+
+
+@if (isCartVisible) {
+  <app-shopping-cart></app-shopping-cart>
+}
+
+@if (isStockVisible && !isCartVisible) {
+  <app-product-stock></app-product-stock>
+}
+

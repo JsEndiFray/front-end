@@ -1,0 +1,30 @@
+<mat-toolbar>
+  <img class="logo" src="/logo/EF.jpg" alt="Logo">
+  <span class="logo">Mi Tienda</span>
+  <div class="spacer"></div>
+  <button class="stock" (click)="inStock()">Consultar Stock</button>
+  <div class="spacer"></div>
+  <button class="cart" (click)="onCartClicked()">
+    <img src="/shopping/shopping-cart-outline.svg" alt="Open Cart"/>
+    <span>{{ itemsCount }}</span>
+  </button>
+  <a (click)="logOut()">Cerrar sesion</a>
+</mat-toolbar>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

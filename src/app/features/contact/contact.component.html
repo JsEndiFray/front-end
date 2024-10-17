@@ -1,0 +1,29 @@
+<div class="container-contact">
+  <div class="title-contact">
+    <h2>Contacto</h2>
+  </div>
+
+  <div class="title-h">
+    <p class="title-1">Contactanos si tienes alguna duda </p>
+    <p class="title-2">{{ email }}</p>
+    <p class="title-3">Responderemos en menos de 24 horas</p>
+  </div>
+
+  <form>
+    <div class="field">
+      <input type="text" placeholder="Nombre" name="name" [(ngModel)]="contact.name"/>
+      <input type="email" name="email" id="email" placeholder="Correo electronico" [(ngModel)]="contact.email"
+             required/>
+    </div>
+
+    <div class="field">
+      <textarea cols="90" rows="10" placeholder="Comentario" name="message" [(ngModel)]="contact.message"></textarea>
+    </div>
+
+    <div class="btn">
+      <button type="submit" (click)="sendMessage()">Enviar</button>
+    </div>
+    <p><a [routerLink]="['/login']">¿Volver a login?</a></p>
+
+  </form>
+</div>

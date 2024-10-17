@@ -1,0 +1,10 @@
+<p class="title">Mi Carrito</p>
+@for (item of cartItems; track cartItems) {
+  <app-shopping-cart-item
+    [cartItem]="item"
+    (cartItemDelete)="deleteItem(item)"
+  ></app-shopping-cart-item>
+}
+
+<p class="total"><span class="total-label">Total</span> {{total | number: "1.2-2"}} €</p>
+<button>Finalizar Pedido</button>
